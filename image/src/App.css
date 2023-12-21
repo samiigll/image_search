@@ -1,0 +1,68 @@
+/* App.css */
+
+/* General App styling */
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Styles for Search Header and form */
+.searchDiv {
+  margin-bottom: 20px;
+}
+
+.searchDiv form {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.searchDiv label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.searchDiv input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+/* Styles for the Image List */
+.imageList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+/* Styling for each Image Item */
+.imageListImg {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hover effect for images */
+.imageListImg:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 600px) {
+  .imageList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .searchDiv input {
+    margin-bottom: 10px;
+  }
+}
